@@ -1,7 +1,7 @@
 # Covid19
 
 This project fetches COVID-19 data from an API and displays it using table(statewise) and graphs.    
-project link : [click here](https://data.covid19india.org/)
+project link : [click here]([https://data.covid19india.org/](https://harrshhpattell.github.io/Covid19-India-cases-api/))
 
 ## Project Overview
 
