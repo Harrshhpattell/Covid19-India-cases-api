@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covis-19 DATA</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/05c933c93c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+
+  <body>
+    <!-- main -->
+    <main>
+      <p class="top-para">Covid-19 Data (30 January 2020 to 16 August 2021)</p>
+
+      <section class="first-section">
+        <div class="confirmed">
+          <p class="first toggle">Confirmed</p>
+          <p class="second toggle " id="totalConfirmed"></p>
+          <p class="third toggle" id="totalNewConfirmed">+</p>
+        </div>
+        <div class="Active">
+          <p class="first">Active</p>
+          <p class="second" id="totalActive"></p>
+        </div>
+        <div class="Recoverd">
+          <p class="first">Recovered</p>
+          <p class="second" id="totalRecovered"></p>
+          <p class="third" id="totalNewRecovered"></p>
+        </div>
+        <div class="Deaths">
+          <p class="first">Deaths</p>
+          <p class="second" id="totalDeaths"></p>
+          <p class="third" id="totalNewDeaths"></p>
+        </div>
+        <div class="Tested">
+          <p class="first">Last Updated</p>
+          <p class="second" id="lastUpdatedTime" ></p>
+        </div>
+      </section>
+
+
+      </section>
+
+      <div class="container-fluid mt-2 g-0">
+        <table class="table table-striped table-bordered table-class">
+          <thead>
+            <tr class="text-center">
+              <th>State</th>
+              <th>Confirmed Cases (New)</th>
+              <th>Active (New)</th>
+              <th>Recovered Cases (New)</th>
+              <th>Deaths (New)</th>
+            </tr>
+          </thead>
+          <tbody id="dataRows" class="text-center">
+            <!-- Dynamic rows will be added here -->
+          </tbody>
+        </table>
+      </div>
+      <div style="width: 60%; margin: 0 auto; height: auto;">
+        <canvas style="margin: 100px 0; height: 350px;" id="confirmedGraph"></canvas>
+    <canvas style="margin: 100px 0;height: 350px;" id="recoveredGraph"></canvas>
+    <canvas style="margin: 100px 0;height: 350px;" id="activeGraph"></canvas>
+      </div>
+    </main>
+    <footer style="text-align: center; margin-top: 20px;">
+        Data Source: <a href="https://data.covid19india.org/">COVID-19 India API</a>
+    </footer>
+
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

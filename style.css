@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.table-class {
+  margin: auto;
+  width: 85% !important;
+  border: 2px solid gainsboro !important;
+}
+
+.fa-arrow-up {
+  color: red;
+}
+.top-para {
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 9px 21px;
+  letter-spacing: 1px;
+  background-color: black;
+  margin: 0;
+  padding: 2rem;
+}
+
+/* /-- first section --/  */
+.first-section {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin: 2rem;
+  flex-wrap: wrap;
+}
+
+.confirmed {
+  background-color: white;
+}
+
+.toggle {
+  color: black !important;
+}
+
+.Active {
+  background-color: #007bff;
+}
+
+.Recoverd {
+  background-color: #28a745;
+}
+
+.Deaths {
+  background-color: #dc3545;
+}
+
+.Tested {
+  background-color: #17a2b8;
+}
+
+.confirmed,
+.Active,
+.Recoverd,
+.Deaths,
+.Recoverd-Rate,
+.Tested {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  flex: 1;
+}
+
+.first,
+.second,
+.third {
+  letter-spacing: 1px;
+  color: white;
+}
+
+.first {
+  font-size: 20px;
+}
+
+.second {
+  font-size: 2rem;
+  font-weight: 501;
+}
+
+.third {
+  font-size: 25px;
+}
+
+/* /-- second section --/  */
+.second-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 1rem;
+}
+
+footer {
+  background-color: #ffff00;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
