@@ -9,7 +9,7 @@ The main goal of this project is to provide users with an interactive visualizat
 
 ## API Attribution
 
-This project uses the COVID-19 India API to fetch COVID-19 data. The data source can be found at [link](https://data.covid19india.org/).
+This project uses the COVID-19 India API to fetch COVID-19 data. The data source can be found at [link](https://data.covid19india.org/data.json).
 
 ## Technologies Used
 
