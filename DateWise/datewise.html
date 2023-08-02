@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <title>Datewise COVID-19 Data</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        color: white;
+        text-align: center;
+        font-size: 2em;
+        font-weight: bold;
+        margin-bottom: 9px;
+        letter-spacing: 1px;
+        background-color: black;
+        margin: 0;
+        padding: 2rem;
+      }
+      label {
+        display: block;
+        font-weight: bold;
+        margin: 1rem;
+        text-align: center;
+        color: red;
+      }
+      input[type="date"] {
+        width: 180px;
+        padding: 5px;
+        margin: auto;
+      }
+      .loading-container {
+        text-align: center;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 20px;
+      }
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Datewise COVID-19 Data</h1>
+    <div>
+      <a href="../index.html"
+        ><button type="button" class="btn btn-primary m-4">Home</button></a
+      >
+    </div>
+    <form onsubmit="getDataDateWise(event)">
+      <label for="date"
+        >Select a Date between 30 January 2020 and 16 August 2021:</label
+      >
+      <div style="text-align: center">
+        <input
+          type="date"
+          id="date"
+          name="date"
+          min="2020-01-30"
+          max="2021-08-16"
+          required
+        />
+        <button type="submit" class="btn btn-primary m-4">Submit</button>
+      </div>
+    </form>
+
+    <div class="loading-container">
+      <div
+        class="spinner-border text-success d-none"
+        role="status"
+        id="loadingSpinner"
+      >
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+
+    <div class="table-responsive">
+      <table id="results" class="table table-striped">
+        <thead id="dataHeader"></thead>
+        <tbody id="dataRows">
+          <!-- data  -->
+        </tbody>
+      </table>
+    </div>
+
+    <script src="dateWise.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
